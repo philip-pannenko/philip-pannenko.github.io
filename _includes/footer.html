@@ -1,0 +1,23 @@
+<footer class="container footer">
+	<div class="row"> 
+		<div class="one-half column">
+			<ul class="links">
+				<li>
+					<span>author: {{ site.author | escape }}</span>
+				</li>
+            {% if site.email %}
+				<li>
+					<span>
+						e-mail: <a href="mailto:{{ site.email | encode_email }}">
+						philip &lt;dot&gt; pannenko &lt;at&gt; gmail</a>
+					</span>
+				</li>
+            {% endif %}
+			</ul>
+		</div>
+		<div class="one-half column">
+			<p>{{ site.description | escape }}</p>
+		</div>
+	</div>
+
+</footer>

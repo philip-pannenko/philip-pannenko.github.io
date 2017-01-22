@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="row">
+
+  {{ content }}
+	
+  <table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Story</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in site.posts %}
+    <tr>
+      <td> <a class="post-link" href="{{ post.url | relative_url }}"> {{ post.title | escape }} </a> </td>
+      <td>{{ post.date | date: "%b %-d, %Y" }}</td>
+    </tr>
+	{% endfor %}
+  </tbody>
+</table>
+
+</div>

@@ -1,0 +1,1 @@
+Jaxb binding.xml extending object

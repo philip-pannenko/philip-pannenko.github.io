@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="bottom-divider">
+	<h1>{{ page.title | escape }}</h1>
+	<span>
+		<a class="nav" href="{{ "/" | relative_url}}"> &laquo; home </a>
+		|	
+		<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+	</span>
+
+</div>
+
+<div class="bottom-divider post-content">
+	{{ content }}
+
+	{% if page.previous.url %}
+		<a class="u-pull-left" href="{{page.previous.url}}">&laquo; older </a>
+	{% endif %}
+	{% if page.next.url %}
+		<a class="u-pull-right" href="{{page.next.url}}">newer &raquo;</a>
+	{% endif %}
+	<div class="u-cf"></div>
+</div>
+
+
+
