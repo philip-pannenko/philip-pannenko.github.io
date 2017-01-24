@@ -1,23 +1,26 @@
 <footer class="container footer">
 	<div class="row"> 
-		<div class="one-half column">
-			<ul class="links">
-				<li>
-					<span>author: {{ site.author | escape }}</span>
-				</li>
-            {% if site.email %}
-				<li>
-					<span>
-						e-mail: <a href="mailto:{{ site.email | encode_email }}">
-						philip &lt;dot&gt; pannenko &lt;at&gt; gmail</a>
-					</span>
-				</li>
-            {% endif %}
-			</ul>
-		</div>
-		<div class="one-half column">
+		<div class="nine columns">
+			<br/>
 			<p>{{ site.description | escape }}</p>
+			<p>-- {{ site.author | escape }}</p>
+			<p>
+				<!-- icons from http://www.iconsDB.com -->
+				<a class="sprite sprite-email" href="mailto:{{ site.email | encode_email }}" target="_blank"> </a>
+				<a class="sprite sprite-github" href="https://github.com/philip-pannenko" target="_blank"> </a>
+				<a class="sprite sprite-stackoverflow" href="http://stackoverflow.com/users/846939/philip-pannenko" target="_blank"> </a>
+				<a class="sprite sprite-strava" href="https://www.strava.com/athletes/philip-pannenko" target="_blank"> </a>
+				<a class="sprite sprite-athlinks" href="https://www.athlinks.com/athletes/77314548" target="_blank">  </a>
+				<a class="sprite sprite-facebook" href="https://www.facebook.com/philip.pannenko" target="_blank"> </a>
+				<a class="sprite sprite-linkedin" href="https://www.linkedin.com/in/philip-pannenko" target="_blank"> </a>
+				<a class="sprite sprite-rss" href="http://localhost:4000/feed.xml" target="_blank"> </a>
+			</p>
+		</div>
+		<div class="three columns u-pull-right">
+			<image src="/assets/cheshire.png"></image>
 		</div>
 	</div>
+
+</div>
 
 </footer>
