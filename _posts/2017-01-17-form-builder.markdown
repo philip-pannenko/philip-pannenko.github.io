@@ -11,7 +11,7 @@ But wait, it's not just any form maker. No. That'd be pretty boring. Instead I w
 * render HTML elements based on a configuration json schema
 * tie validation and rules between one-to-many elements
 
-I *think* I [succeeded](https://philippannenko.github.io/form-builder/).
+I *think* I [succeeded](https://philip-pannenko.github.io/form-builder/).
 
 Ultimately, it demonstrates that using two configurations files, it's possible to use LEGO like components to create a form schema that can be generated. More impressively, it demonstrates it's possible to use predefined behaviors to perform cascading-like model transformations, validations and HTML element attributes changes.
 
