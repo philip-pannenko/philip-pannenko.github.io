@@ -12,4 +12,4 @@ Before I dive into the details, there are a number of similar iterations of this
 
 Ultimately, I propose an idea to dynamically generate static templates, which, when requested, will be fetched entirely rendered with the asked for dynamically generated content. All on initial page load. All to minimize an end-user’s page load times. All because we generate the templates once and reuse them.
 
-Check out this (repo)[https://github.com/philip-pannenko/static-dynamic-forms]. If my ramblings made zero sense, maybe my code will make more sense.
+Check out this [repo](https://github.com/philip-pannenko/static-dynamic-forms). If my ramblings made zero sense, maybe my code will make more sense.
